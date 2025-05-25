@@ -2,13 +2,11 @@
 	"geode": "4.4.0",
 	"gd": {
 		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"android": "2.2074"
 	},
 	"id": "vladimka.custom-backgrounds",
 	"name": "Custom Backgrounds",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "vladimka",
 	"description": "Custom Backgrounds for main menu",
 	"settings": {
@@ -20,17 +18,29 @@
 			"type": "file",
 			"name": "Background",
 			"default": {
-				"win": "{mod_save_dir}/resources/robtop.jpg"
+				"win": "{mod_save_dir}/resources/robtop.jpg",
+				"android": "{mod_save_dir}/resources/robtop.jpg"
 			},
 			"control": {
 				"dialog": "open",
 				"filters": [
 					{
-						"files": ["*.png", "*.jpg"],
+						"files": ["*.png", "*.jpg", "*.jpeg"],
 						"description": "Images"
 					}
 				]
 			}
+		},
+		"color-feature" : {
+			"type" : "bool",
+			"name" : "Enable color feature",
+			"default" : false
+		},
+		"color" : {
+			"type": "rgb",
+			"name" : "Background Color",
+			"default" : [255, 255, 255],
+			"enable-if": "color-feature"
 		}
 	},
 	"resources": {
@@ -40,5 +50,21 @@
 	},
 	"links": {
 		"source": "https://github.com/vladimka/custom-backgrounds"
-	}
+	},
+	"tags": ["interface", "customization", "enhancement", "offline"],
+	"incompatibilities" : {
+		"omgrod.geodify" : {
+			"version": "*",
+			"importance": "conflicting"
+		},
+		"cgytrus.menu-shaders" : {
+			"version": "*",
+			"importance": "conflicting"
+		},
+		"camila314.custombgg" : {
+			"version": "*",
+			"importance": "conflicting"
+		}
+	},
+	"early-load": true
 }
