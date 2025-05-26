@@ -11,15 +11,19 @@ public:
 
 	static CustomBackground* create(){
         auto ret = new CustomBackground();
+
         if (ret->init()) {
             ret->autorelease();
+
             return ret;
         }
+
         CC_SAFE_DELETE(ret);
+
         log::info("Failed to create CustomBackground instance");
+
         return nullptr;
     };
-
 protected:
 	bool init();
 };

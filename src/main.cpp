@@ -1,2 +1,6 @@
+#include "hooks/LoadingLayer.cpp"
 #include "hooks/MenuLayer.cpp"
 #include "hooks/LevelInfoLayer.cpp"
+#include "hooks/LevelSelectLayer.cpp"
+#include "hooks/LevelSearchLayer.cpp"
+#include "hooks/LevelBrowserLayer.cpp"

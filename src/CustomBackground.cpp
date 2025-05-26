@@ -14,9 +14,12 @@ bool CustomBackground::init(){
 
     if(!std::filesystem::exists(m_bgPath)){
         log::info("Failed to find iamge");
+
         auto label = CCLabelBMFont::create("Images does not exists!", "bigFont.fnt"); 
+
         label->setPosition(winSize/2);
         this->addChild(label);
+
         return true;
     }
 
@@ -25,9 +28,12 @@ bool CustomBackground::init(){
 
     if (!sprite) {
         log::info("Failed to create sprite");
+
         auto label = CCLabelBMFont::create("Could not create background!", "bigFont.fnt"); 
+
         label->setPosition(winSize/2);
         this->addChild(label);
+        
         return true;
     }
 
@@ -40,6 +46,7 @@ bool CustomBackground::init(){
     sprite->setScaleY(scaleY);
     sprite->setAnchorPoint({ 0, 0 });
     sprite->setPosition({ 0, 0 });
+    
     if(m_colorFeature)
         sprite->setColor(m_color);
 
