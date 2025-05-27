@@ -6,7 +6,7 @@
 	},
 	"id": "vladimka.custom-backgrounds",
 	"name": "Custom Backgrounds",
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"developer": "vladimka",
 	"description": "Custom Backgrounds for main menu",
 	"settings": {
@@ -61,7 +61,7 @@
 			"version": "*",
 			"importance": "conflicting"
 		},
-		"camila314.custombgg" : {
+		"camila314.custombg" : {
 			"version": "*",
 			"importance": "conflicting"
 		}

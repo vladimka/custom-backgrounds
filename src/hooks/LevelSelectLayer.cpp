@@ -17,10 +17,11 @@ class $modify(MyLevelSelectLayer, LevelSelectLayer){
 			return true;
 		}
 
-		auto bg = this->getChildByID("background");
+		auto bg = static_cast<CCSprite*>(this->getChildByID("background"));
         auto g = this->getChildByID("ground-layer");
 
-		bg->setVisible(false);
+		// bg->setVisible(false);
+		bg->setOpacity(50);
         g->setVisible(false);
 
         CustomBackground *cbg = CustomBackground::create();
