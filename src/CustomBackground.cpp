@@ -23,7 +23,7 @@ bool CustomBackground::init(){
         return true;
     }
 
-    auto path = m_bgPath.string().c_str();
+    auto path = geode::utils::string::pathToString(m_bgPath).c_str();
     auto sprite = CCSprite::create(path);
 
     if (!sprite) {

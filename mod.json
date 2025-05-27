@@ -1,12 +1,12 @@
 {
-	"geode": "4.4.0",
+	"geode": "4.5.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074"
 	},
 	"id": "vladimka.custom-backgrounds",
 	"name": "Custom Backgrounds",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "vladimka",
 	"description": "Custom Backgrounds for main menu",
 	"settings": {

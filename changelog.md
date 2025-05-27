@@ -1,3 +1,8 @@
+# 1.0.2
+- Update geode version to 4.5.0
+- More layers
+- Color feature (experimental)
+
 # 1.0.1
 - Android support
 - LevelInfoLayerSupport
